@@ -1,0 +1,1353 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>Programming 2 Exam Revision</title>
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="../css/prism.css">
+<link rel="icon" type="image/x-icon" href="../icon.ico">
+</head>
+<body>
+
+<ul>
+	<li class="dropdown">
+		<a href="../index.html" class="dropbtn">Home</a>
+	</li>
+	<li class="dropdown">
+		<a href="#section1" class="dropbtn">BST Traversal</a>
+			<div class="dropdown-content">
+			  <a href="#section1.1">In-order</a>
+			  <a href="#section1.2">Pre-order</a>
+			  <a href="#section1.3">Post-order</a>
+			  <a href="#section1.4">BST Notes</a>
+			  <a href="#section1.5">BST Organising</a>
+			  <a href="#section1.6">Deleting a BST node</a>
+			  <a href="#section1.7">Node Implementation</a>
+			  <a href="#section1.8">BST Implementation</a>
+			</div>
+	</li>
+	<li class="dropdown">
+		<a href="#section2" class="dropbtn">OOP</a>
+			<div class="dropdown-content">
+			  <a href="#section2.1">Overloading methods</a>
+			  <a href="#section2.2">Overriding methods</a>
+			  <a href="#section2.3">Polymorphic methods</a>
+			  <a href="#section2.4">Abstract classes</a>
+			  <a href="#section2.5">Streams and Files</a>
+			  <a href="#section2.6">File I/O Procedure in Java</a>
+			  <a href="#section2.7">Java Data Streams</a>
+			  <a href="#section2.8">FileInputStream and FileOutputStream</a>
+			  <a href="#section2.9">DataInputStream and DataOutputStream</a>
+			  <a href="#section2.10">FileReader & FileWriter</a>
+			  <a href="#section2.11">BufferedReader & PrintWriter</a>
+			  <a href="#section2.12">ObjectOutputStream and ObjectInputStream</a>
+			  <a href="#section2.13">Searching & Sorting data from files</a>
+			  <a href="#section2.14">Data structures</a>
+			  <a href="#section2.15">Searching an array</a>
+			</div>
+	</li>
+	<li class="dropdown">
+		<a href="#section3" class="dropbtn">I/O & Exceptions</a>
+			<div class="dropdown-content">
+			  <a href="#section3.1">Java Exceptions</a>
+			  <a href="#section3.2">Checked and Unchecked Exceptions</a>
+			  <a href="#section3.3">Catching Exceptions with try…catch</a>
+			  <a href="#section3.4">The finally Clause</a>
+			  <a href="#section3.5">Passing on Exceptions with the throws</a>
+			  <a href="#section3.6">Creating and Throwing Exceptions</a>
+			  <a href="#section3.7">I/O Hierarchies</a>
+			</div>
+	</li>
+	<li class="dropdown">
+		<a href="#section4" class="dropbtn">Data Structures & Algorithms</a>
+			<div class="dropdown-content">
+			  <a href="#section4.1">Finding the maximum/minimum value</a>
+			  <a href="#section4.2">Searching for a target key value (tKey)</a>
+			  <a href="#section4.3">Using a sentinel value</a>
+			  <a href="#section4.4">Linear searching</a>
+			  <a href="#section4.5">Classifying algorithmic efficiency – Big O</a>
+			  <a href="#section4.6">Algorithmic order - summary</a>
+			  <a href="#section4.7">Iteration & Algorithmic efficiency</a>
+			  <a href="#section4.8">Bubble sort</a>
+			  <a href="#section4.9">Linear data structures</a>
+			  <a href="#section4.10">Non-linear data structures</a>
+			  <a href="#section4.11">Tree Definitions</a>
+			  <a href="#section4.12">Sub-trees</a>
+			  <a href="#section4.13">Binary Tree</a>
+			</div>
+	</li>
+	<li class="dropdown">
+		<a href="#section5" class="dropbtn">Binary Search & Lists</a>
+			<div class="dropdown-content">
+			  <a href="#section5.1">Binary Search</a>
+			  <a href="#section5.2">Binary Search – iterative form</a>
+			  <a href="#section5.3">Arrays and Computer Memory</a>
+			  <a href="#section5.4">Assigning Java references</a>
+			  <a href="#section5.5">Costly Operations on Arrays: Creation</a>
+			  <a href="#section5.6">Linked Lists & Dynamic Data Structures</a>
+			  <a href="#section5.7">Java’s Garbage Collection</a>
+			</div>
+	</li>
+	<li class="dropdown">
+		<a href="#section6" class="dropbtn">Linked lists etc</a>
+			<div class="dropdown-content">
+			  <a href="#section6.1">Linked Lists & Dynamic Data Structures</a>
+			  <a href="#section6.2">Abstract Data Types (ADT’s)</a>
+			  <a href="#section6.3">ADTs in Java</a>
+			  <a href="#section6.4">Java interface<</a>
+			  <a href="#section6.5">The Queue data structure</a>
+			  <a href="#section6.6">A Queue ADT, using a Java Interface</a>
+			  <a href="#section6.7">Queue ADT Operations</a>
+			  <a href="#section6.8">Interface Pre- and Post-Conditions</a>
+			  <a href="#section6.9">Queue Boundary Exceptions</a>
+			  <a href="#section6.10">Implementation with Cyclic buffering</a>
+			  <a href="#section6.11">Cyclic Buffering by masking</a>
+			  <a href="#section6.12">Array-based implementation for a Queue</a>
+			</div>
+	</li>
+	<li class="dropdown">
+		<a href="#section7" class="dropbtn">Recursion & data structures</a>
+			<div class="dropdown-content">
+			  <a href="#section7.1">Linked List</a>
+			  <a href="#section7.2">Self Reference: Recursion</a>
+			  <a href="#section7.3">How recursion works</a>
+			  <a href="#section7.4">Recursion as divide and conquer</a>
+			  <a href="#section7.5">Recursive example with Strings</a>
+			  <a href="#section7.6">How can a data structure be recursive?</a>
+			  <a href="#section7.7">Part of a Linked List class</a>
+			  <a href="#section7.8">A Linked List class with recursion</a>
+			  <a href="#section7.9">Binary Search</a>
+			</div>
+	</li>
+	<li class="dropdown">
+		<a href="#section8" class="dropbtn">Stack ADT</a>
+			<div class="dropdown-content">
+			  <a href="#section8.1">Stack ADT</a>
+			  <a href="#section8.2">Using a Stack</a>
+			  <a href="#section8.3">Stack ADT operations</a>
+			  <a href="#section8.4">ADT specific exceptions</a>
+			  <a href="#section8.5">Stack ADT - list-based</a>
+			  <a href="#section8.6">Stack data structures</a>
+			</div>
+	</li>
+	<li class="dropdown">
+		<a href="#section9" class="dropbtn">Hashes</a>
+			<div class="dropdown-content">
+			  <a href="#section9.1">Hash Files</a>
+			  <a href="#section9.2">Collisions</a>
+			  <a href="#section9.3">Hash Tables</a>
+			  <a href="#section9.4">Searching a Hash Table</a>
+			  <a href="#section9.5">Hash Table Operations</a>
+			</div>
+	</li>
+	<li class="dropdown">
+		<a href="#section10" class="dropbtn">MVC Design</a>
+			<div class="dropdown-content">
+			  <a href="#section10.1">MVC Design Pattern</a>
+			  <a href="#section10.2">MVC with Java/Swing</a>
+			  <a href="#section10.3">MVC Problems</a>
+			  <a href="#section10.4">MVC Adherence</a>
+			</div>
+	</li>
+</ul>
+
+<h1 class="page-title">Programming 2 Exam Revision</h1>
+
+<br><hr><br>
+
+<div class="notes">
+
+<h2 class="Heading4535" id="section1">BST Traversal</h2>
+<br>
+<b>Traversals are closely related to the operations of finding and searching.</b><br>
+<b>A traversal is an inspection operation which involves processing each node of the tree once.</b>
+<br><br>
+<b>The Java code for traversal:</b>
+<pre><code class="language-java">public class BinTree {
+	private BinTreeNode root;
+	// Behaviour methods
+	public void addNode(BinTreeNode newNode, ...) { ... }
+	public void removeNode(...) { ... }
+	public int getHeight() { ... }
+	...
+</code></pre>
+
+<h3 id="section1.1">In-order:</h3>
+<b>The traversal order with nodes is as follows: Left, Root, Right.</b>
+<br>
+<b>The Java code for traversal:</b>
+<pre><code class="language-java">public void inOrderTrav(BinaryTreeNode node) {
+	if ( node == null ) return;
+	inOrderTrav( node.getLeftChild() );
+	System.out.print( node.getValue() + “ “ );
+	inOrderTrav( node.getRightChild() );
+} // end inOrderTrav
+</code></pre>
+
+<h3 id="section1.2">Pre-order:</h3>
+<b>The traversal order with nodes is as follows: Root, Left, Right.</b>
+<br>
+<b>The Java code for traversal:</b>
+<pre><code class="language-java">public void preOrderTrav(BinaryTreeNode node) {
+	if ( node == null ) return;
+	System.out.print( node.getValue() + “ “ );
+	preOrderTrav( node.getLeftChild() );
+	preOrderTrav( node.getRightChild() );
+} // end preOrderTrav
+</code></pre>
+
+<h3 id="section1.3">Post-order:</h3>
+<b>The traversal order with nodes is as follows: Left, Right, Root.</b>
+<br>
+<b>The Java code for traversal:</b>
+<pre><code class="language-java">public void postOrderTrav(BinaryTreeNode node) {
+	if ( node == null ) return;
+	postOrderTrav( node.getLeftChild() );
+	postOrderTrav( node.getRightChild() );
+	System.out.print( node.getValue() + “ “ );
+	} // end postOrderTrav
+</code></pre>
+<br>
+<h3 id="section1.4">BST Notes</h3>
+<b>A binary tree is full if every level that contains any nodes contains the maximum number of nodes for that level.</b><br>
+<b>A full binary tree has the minimum height for the number of nodes that it has.</b><br>
+<b>The minimum height of a binary tree can be calculated with: n &lt;= 2<sup>h</sup> - 1</b><br>
+<b>E.g. if there are 6 nodes, n = 6.</b><br>
+<b>If we say h=2: 2<sup>2</sup> - 1 = 3. 6&gt;&ne; 3 so it is invalid.</b><br>
+<b>If we say h=3: 2<sup>3</sup> - 1 = 7. 6&lt;= 7 therefore, the minimum height is 3.</b><br>
+
+<h3 id="section1.5">BST Organising</h3><br>
+<b>There are 2 rules for BST's:</b><br>
+<b>1. If L is any node in the left sub-tree of N, then the value of L is less than N</b><br>
+<b>2. If R is any node in the right sub-tree of N, then the value of R is greater than N</b><br>
+<b>The Java code for searching a BST:</b>
+<pre><code class="language-java">while ( key not found and more tree to search ) {
+	if ( key 'less than' current value ) {
+		search left sub-tree
+	}
+	else {
+		search right sub-tree
+	}
+}
+</code></pre>
+
+<h3 id="section1.6">Deleting a BST node</h3><br>
+<b>This is easy if the node is a leaf node otherwise deleting a node is a complex process that requires the rearrangement of large portions of the tree.</b><br>
+<b>The Java algorithm for deleting a BST, non-leaf node is:</b><br>
+<pre><code class="language-java">if (just one sub-tree of target node is empty) { // another straightforward case
+	Copy the target node's non-null child pointer to update the relevant child pointer of the parent of the target node
+	// target node will then get 'garbage collected'
+}
+else { // this is the 'tricky' case ...
+	Find the rightmost node (RMN) in the left sub-tree of the target node
+	Over-write the target node's data with the RMN's data
+	Let the first node from the RMN's left sub-tree take RMN's place
+	(i.e. by letting the child pointer of RMN's original parent point to first node)
+}
+</code></pre>
+<br>
+<b>Removing Data:</b><br>
+<b>Removing a value is also quite complicated.</b><br>
+<b>If, after removing a value, the node contains too few keys then it will have to be adjusted.</b><br>
+<b>Nodes may have to gain a value from somewhere else...</b><br>
+<b>A simple movement if there is a "spare" slot in one of the descendant leaf nodes.</b><br>
+<b>If descendant nodes are all as small as they can be, then there will be a need to merge nodes:</b><br>
+<b>We need to check whether there is a knock-on effect from the change made and possibly these operations will have to be applied recursively up and down the tree.</b><br>
+
+<h3 id="section1.7">Binary Tree Node Implementation</h3>
+<pre><code class="language-java">public class BinTreeNode {
+	private Object data; // Reference to the node’s data.
+	private BinTreeNode leftNode; // Reference to the left node.
+	private BinTreeNode rightNode; // Reference to the right node.
+	private BinTreeNode parentNode; // Reference to the parent node.
+	// getters & setters
+	public BinTreeNode getLeftChild(...) { ... }
+	public void setLeftChild(BinTreeNode newNode) { ... }
+	public BinTreeNode getRightChild(...) { ... }
+	public void setRightChild(BinTreeNode newNode) { ... }
+	...
+}
+</code></pre>
+<br>
+
+<h3 id="section1.8">Binary Tree Implementation</h3>
+<pre><code class="language-java">public class BinTree {
+	private BinTreeNode root;
+	// Behaviour methods
+	public void addNode(BinTreeNode newNode, ...) { ... }
+	public void removeNode(...) { ... }
+	public int getHeight() { ... }
+	public void preOrderTrav(BinaryTreeNode node) {
+		if ( node == null ) return;
+		System.out.print( node.getValue() + “ “ );
+		preOrderTrav( node.getLeftChild() );
+		preOrderTrav( node.getRightChild() );
+	} // end preOrderTrav
+	public void inOrderTrav(BinaryTreeNode node) {
+		if ( node == null ) return;
+		inOrderTrav( node.getLeftChild() );
+		System.out.print( node.getValue() + “ “ );
+		inOrderTrav( node.getRightChild() );
+	} // end inOrderTrav
+	public void postOrderTrav(BinaryTreeNode node) {
+		if ( node == null ) return;
+		postOrderTrav( node.getLeftChild() );
+		postOrderTrav( node.getRightChild() );
+		System.out.print( node.getValue() + “ “ );
+	} // end postOrderTrav
+	...
+}
+</code></pre>
+
+</div>
+
+<br><hr><br>
+
+<div class="notes">
+<h2 class="Heading4535" id="section2">OOP</h2>
+<br>
+<b>OOP has self-contained objects containing both the programming routine/procedures and the data being processed.</b><br>
+<b>These objects interact by sending data to one another.</b><br>
+<b>In OOP, you write classes that represent real world things and create objects based on these classes.</b><br>
+<b>Classes have attributes as well as procedures (known as methods).</b><br>
+
+<h3 id="section2.1">Overloading methods</h3>
+<b>Constructor methods:</b><br>
+<b>1. Have the same identifier as the class.</b><br>
+<b>2. Are invoked when the new operator is used to create an instance of the class (i.e. to perform object-creation).</b><br>
+<b>3. Perform such tasks as initialisation of variables, and do not return a value.</b><br>
+<b>4. They are also often overloaded.</b><br>
+<b>4.1 - This means that we can have more than one constructor with same name/identifier.</b><br>
+<b>4.2 - But each constructor has different numbers or types of arguments specified in its declaration. (Often referred to as a different method signature).</b><br>
+<br>
+<b>Instance variables would normally be declared as private so that:</b><br>
+<b>1. They cannot be directly viewed by any outside object.</b><br>
+<b>2. Other objects could only access them via the object's public "get-er" methods (N.B. encapsulation).</b><br>
+<b>If you want an instance variable or method to be only used by inheriting sub-classes, it must be declared as protected in the super-class.</b><br>
+
+<h3 id="section2.2">Overriding methods</h3>
+<b>A sub-class can add to the methods, constants and variables declared in a super-class.</b><br>
+<b>It can also override methods that are declared in the super-class by declaring a new method which has the same name,</b><br>
+<b>visibility and set of formal arguments. (This is NOT the same as overloading!)</b><br>
+
+<h3 id="section2.3">Polymorphic methods</h3>
+<b>Inheritance using the ability to overload and override existing functionality is one of the most important O-O techniques.</b><br>
+<b>It allows existing code to be re-used in a structured way.</b><br>
+<b>Polymorphism allows flexible & robust coding:</b><br>
+<b>Methods with same method-signature can be called to carry out the same operation in bespoke ways.</b><br>
+
+<h3 id="section2.4">Abstract classes</h3>
+<b>Abstract classes are one way for software developers to ensure that any future programmers will only re-use their code in more constrained way.</b><br>
+<b>N.B. Inheritance alone places no restriction on future programmers in terms of whether they will choose override any components of the super-class, or not.</b><br>
+<b>Abstract classes are a way to effectively force future programmers to create methods in any future sub-classes they might create:</b><br>
+<b>1. By declaring a method signature in the super-class with the qualifier abstract and providing no method body.</b><br>
+<b>Code example:</b><br>
+<pre><code class="language-java">public abstract void addInterest(int r);</code></pre>
+<b>Now any inheriting sub-classes must provide an implementation for addInterest to avoid compilation errors</b><br>
+<br>
+<b>2. Creating an abstract method will mean that the class it is declared in also has to become an abstract class.</b><br>
+<b>Code example:</b><br>
+<pre><code class="language-java">public abstract class DepositAccount extends BankAccount{...};</code></pre>
+<b>An important consequence for the software designer to consider is that Java’s new operator cannot create object instances of any abstract classes – only of its sub-classes</b><br>
+<br>
+<b>However, in addition to abstract methods (N.B. they have no method body) abstract classes can still have regular methods/variables coded inside them.</b><br>
+<b>So that inheriting sub-classes can still be provided with some existing re-usable functionality, as we have seen before.</b><br>
+
+<h3 id="section2.5">Streams and Files</h3>
+<b>A file can be anything from a disk file to a physical device (screen, keyboard, sound card, sensor etc.)</b><br>
+<b>A stream is an abstraction/interface between the programmer and the file.</b><br>
+
+<h3 id="section2.6">File I/O Procedure in Java</h3>
+<b>Create a stream and associate it with a data source (i.e. the file). This effectively also opens the data source.</b><br>
+<b>Access the stream (read from or write to it).</b><br>
+<b>Close the stream to free up system resources and "flush" any buffered data.</b><br>
+
+<h3 id="section2.7">Java Data Streams</h3>
+<b>Classes managing streams are implemented in the java.io package. Import this package to be able to use I/O classes.</b><br>
+<b>There are two major types of streams in Java:</b><br>
+<b>1. Byte streams:</b><br>
+<b>1.1 - FileInputStream & FileOutputStream</b><br>
+<b>1.2 - DataInputStream & DataOutputStream</b><br>
+<b>2. Character Streams:</b><br>
+<b>2.1 - FileReader & FileWriter</b><br>
+<b>2.2 - BufferedReader & PrintWriter</b><br>
+
+<h3 id="section2.8">FileInputStream and FileOutputStream</h3><br>
+<b>To create a new FileInputStream:</b><br>
+<pre><code class="language-java">FileInputStream myStr = new FileInputStream( Filename );</code></pre>
+<b>To read from a FileInputStream:</b><br>
+<pre><code class="language-java">int myByte = myStr.read();</code></pre>
+<b>To create a new FileOutputStream:</b><br>
+<pre><code class="language-java">FileOutputStream myStr = new FileOutputStream( Filename );</code></pre>
+<b>To write to a FileOutputStream:</b><br>
+<pre><code class="language-java">myStr.write( int );</code></pre>
+<b>Used to read/write data at low level such as image pixels, implement communication links</b><br>
+
+<h3 id="section2.9">DataInputStream and DataOutputStream</h3><br>
+<b>Used to read and write Java primitive data types (i.e. boolean, byte, double, float, int, long and short).</b><br>
+<b>It is more abstract than FileInputStream and FileOutputStream.</b><br>
+<b>To create a new DataOutputStream:</b><br>
+<pre><code class="language-java">DataOutputStream myStr = new DataOutputStream(new FileOutputStream( Filename ));</code></pre>
+<b>To create a new DataInputStream:</b><br>
+<pre><code class="language-java">DataInputStream myStr = new DataInputStream(new FileInputStream( Filename ));</code></pre>
+
+<h3 id="section2.10">FileReader & FileWriter</h3><br>
+<b>Can be used to read and write characters from/to files:</b><br>
+<b>The FileReader class implements:</b><br>
+<pre><code class="language-java">int read()
+int read(char[] cbuf, int offset, int length)
+</code></pre>
+<b>The FileWriter class implements:</b><br>
+<pre><code class="language-java">void write(int c)
+void write(char[] cbuf, int offset, int length)
+void write(String str, int offset, int length)
+</code></pre>
+
+<h3 id="section2.11">BufferedReader & PrintWriter</h3><br>
+<b>Used to read and write characters but more efficiently than FileReader and FileWriter.</b><br>
+<b>The BufferedReader class implements:</b><br>
+<pre><code class="language-java">int read()
+int read(char[] cbuf, int offset, int length)
+String readLine()
+</code></pre>
+<b>The PrintWriter class implements:</b><br>
+<pre><code class="language-java">void write(int c)
+void write(char[] cbuf, int offset, int length)
+void write(String str, int offset, int length)
+void print(String str)
+void println(String str)
+</code></pre>
+
+<h3 id="section2.12">ObjectOutputStream and ObjectInputStream</h3><br>
+<b>These are used to write and read objects to/from files.</b><br>
+<b>They are even more abstract than the IO classes that have been introduced to you so far.</b><br>
+<b>Only objects that are serializable (like nearly all classes defined in the Java packages) can be written/read using these IO classes.</b><br>
+<b>You can mix object types when writing in a file but you must read objects back in the same order that they were written.</b><br>
+
+<h3 id="section2.13">Searching & Sorting data from files</h3><br>
+<b>Computers are very good at storing large amounts of data and sifting through it of course, someone has to write the ‘sifting’ instructions.</b><br>
+<b>Searching and sorting data are extremely important parts of many, if not most, applications – even many that are not directly thought of as "data processing".</b><br>
+<b>To consider ways in which we can search through data, we will need:</b><br>
+<b>1. A structure to hold some data to search through.</b><br>
+<b>2. Some operations that we can perform on that structure.</b><br>
+<b>3. One or more algorithms or approaches to follow that carries out the 'sifting'.</b><br>
+<b>Common reasons for searching are:</b><br>
+<b>1. To find the maximum/minimum value in a dataset.</b><br>
+<b>2. To find out whether a particular value is present or absent.</b><br>
+<b>3. Sort the entire dataset into some order.</b><br>
+
+<h3 id="section2.14">Data structures</h3>
+<b>A data structure is really a collection of data items organised for efficient storage and processing.</b><br>
+<b>Often it is convenient to define a set of operations on a data structure, so that we can process the data items in a regular and well understood way.</b><br>
+<b>Exactly what the data in a data structure means is not so important to us as programmers!</b><br>
+<b>What is important is that we are able to write?</b><br>
+<b>1. Appropriate code to store the data items in a structure.</b><br>
+<b>2. Code that can also process the data items efficiently.</b><br>
+<b>The combination of data storage and the coding of basic operations to process it, is a Data Structure.</b><br>
+
+<h3 id="section2.15">Searching an array</h3>
+<b>An array is just about the simplest data structure that we can search through.</b><br>
+<b>The array data structure is fairly flexible, but has some restrictions:</b><br>
+<b>1. We can use the very simple operations defined for arrays to perform our search.</b><br>
+<b>2. Data values are all of a known type.</b><br>
+<b>3. Data may, or may not, be ordered.</b><br>
+<b>4. More than one data item might have the same value.</b><br>
+<b>5. We have a maximum amount of data that can be processed at one time.</b><br>
+
+</div>
+
+<br><hr><br>
+
+<div class="notes">
+<h2 class="Heading4535" id="section3">File I/O and Exception Handling</h2>
+<br>
+<h3 id="section3.1">Java Exceptions</h3>
+<b>Exceptions are the outcome of run-time errors that are potentially fatal to your program.</b><br>
+<b>In the Java exception handling mechanism, exceptions are thrown in a fatal situation (to allow graceful reporting).</b><br>
+<b>The programmer can choose to deal with exceptions to allow their program to terminate more gracefully or even prevent the termination of their program altogether and deal with the problem (to allow graceful recovery).</b><br>
+
+<h3 id="section3.2">Checked and Unchecked Exceptions</h3>
+<b>Methods throw exceptions that can be checked or unchecked.</b><br>
+<b>Checked exceptions describe problems that are likely to occur due to circumstances outside of the program’s control (corrupt file, end of file, broken network etc).</b><br>
+<b>The programmer should still deal with checked exceptions gracefully. The compiler needs to know what will happen in case a checked exception is thrown.</b><br>
+<b>Unchecked exceptions occur because of the programmer’s fault.</b><br>
+<b>The programmer can choose not to deal with unchecked exceptions.</b><br>
+
+<h3 id="section3.3">Catching Exceptions with try…catch</h3>
+<b>If we have to (or choose to) deal with exceptions we must catch them using a try…catch structure.</b><br>
+<b>Code example:</b><br>
+<pre><code class="language-java">try {
+	program’s application statements
+}
+catch(exceptionClass1 exceptionObject) {
+	statements that could gracefully deal with exceptionClass1 problems
+}
+catch(exceptionClass2 exceptionObject) {
+	statements that could gracefully deal with exceptionClass2 problems
+}
+...
+</code></pre>
+
+<h3 id="section3.4">The finally Clause</h3>
+<b>Used when some action needs to be taken whether or not an exception occurs.</b><br>
+<b>Code example:</b><br>
+<pre><code class="language-java">try {
+	... // Open file.
+	... // Access file (read/write).
+}
+catch(IOException e) {
+	... // Report error to user/logs.
+}
+finally {
+	... // Close file or
+	... // retry or
+	... // maybe save any data?
+}
+</code></pre>
+
+<h3 id="section3.5">Passing on Exceptions with the throws</h3>
+<b>If potential checked exceptions in a method are not handled by that method (using a try…catch structure) then the caller of that method must be informed using the throws specifier (otherwise compilation error):</b><br>
+<b>Code example:</b><br>
+<pre><code class="language-java">public int[] readNumbers(String filename) throws IOException
+{... stmts to read a file of integer data into an array ...}
+</code></pre>
+<b>If potential checked exceptions in a method are not handled by that method (using a try…catch structure) then the caller of that method must be informed using the throws specifier (otherwise compilation error):</b><br>
+<b>Code example:</b><br>
+<pre><code class="language-java">...
+try {
+	int[] nums = readNumbers(“data.txt”);
+}
+catch(IOException e) {
+	System.out.println(“IOException occurred”);
+}
+...
+</code></pre>
+
+<h3 id="section3.6">Creating and Throwing Exceptions</h3>
+<b>You can throw exceptions using the throw keyword.</b><br>
+<b>Code example:</b><br>
+<pre><code class="language-java">if(...) {
+	NumberFormatException e = new NumberFormatException();
+	throw e;
+}
+</code></pre>
+<b>The calling method must then deal with your exception.</b><br>
+<b>Also, you can create your own exception classes that extend (inherit from) any of the existing exception classes.</b><br>
+
+<h3 id="section3.7">I/O Hierarchies</h3>
+<b>Java’s I/O streams are realised as an inheritance hierarchy of classes.</b><br>
+<b>Near the top of the hierarchy are classes that read and write raw data to streams.</b><br>
+<b>As we move down the hierarchy, classes are responsible for more and more sophisticated processing of input and output streams.</b><br>
+
+</div>
+
+<br><hr><br>
+
+<div class="notes">
+<h2 class="Heading4535" id="section4">Data Structures & Algorithms</h2>
+<br>
+<h3 id="section4.1">Finding the maximum/minimum value</h3>
+<b>For this example we assume that the whole array is to be searched.</b><br>
+<pre><code class="language-java">public class Searching {
+	public int findMaximum(int[] data) {
+		int result = data[0]; // initialise result
+		for (int i = 1; i< data.length; i++) {
+			if (data[i] > result) { // curr value larger
+				result = data[i]; // update result value
+			}
+		}
+		return result;
+	} // end findMaximum
+} // end class Searching
+</code></pre>
+
+<h3 id="section4.2">Searching for a target key value (tKey)</h3>
+<b>Assume first data item is at element 0, and last item of data is at an array location given by the lastElement argument:</b><br>
+<pre><code class="language-java">public class Searching {
+	public int findKey1( int tKey, int[] buffer,
+	int lastElement ) {
+		int i;
+		for (i=0; buffer[i]!=tKey && i <= lastElement; i++);
+		if (i == lastElement+1) {
+			return -1; // indicate tKey not found
+		}
+		else {
+			return i; // return tKey position
+		}
+	} // end findKey1
+} // end class Searching
+</code></pre>
+
+<h3 id="section4.3">Using a sentinel value</h3>
+<b>FindKey1's algorithm can be improved by using a sentinel item to mark the end of the data in the array.</b><br>
+<b>If the sentinel item is given the same value as the target-key itself, we ensure that a ‘find’ will always be successful.</b><br>
+<b>So now we need only test for the target key’s value on each iteration, and we can omit a test for reaching the last data item present.</b><br>
+<b>Code example:</b><br>
+<pre><code class="language-java">public int findKey2(int tKey, int[] buffer, int lastElement) {
+	int i;
+	buffer[lastElement+1] = tKey; // set sentinel
+	for (i = 0; buffer[i] != tKey; i++);
+		if (i == lastElement+1) {
+		return -1; // indicate tKey not found
+	}
+	else {
+		return i; // return tKey position
+	}
+} // end findKey2
+</code></pre>
+
+<h3 id="section4.4">Linear searching</h3>
+<b>Linear searching (in either form) is quite a naive approach to searching through data.</b><br>
+<b>no reliance on particular knowledge about the data, such as ordering.</b><br>
+<b>It is therefore the least efficient approach to searching, but widely applicable.</b><br>
+
+<h3 id="section4.5">Classifying algorithmic efficiency – Big O</h3>
+<b>We can think about how efficient a simple linear search is and express this in Big O notation. Note that:</b><br>
+<b>1. 'On average' we’ll need to read through half of an unsorted list of items to find a particular value.</b><br>
+<b>2. We have to read the entire list to discover that a particular value doesn’t exist.</b><br>
+<b>3. If the size of the list doubles, the number of items we’ll look at doubles.</b><br>
+<b>A linear search is therefore an O(n) operation.</b><br>
+<b>The two linear searches, seen so far, will take different amounts of time to execute, but their performance will always scale in the same way – that’s what Big O shows.</b><br>
+
+<h3 id="section4.6">Algorithmic order - summary</h3>
+<b>Exact performance figures can depend on the data itself.</b><br>
+<b>and the particular executing machine’s spec/performance ...</b><br>
+<b>and any other concurrently-running tasks ...</b><br>
+<b>A formula/equation predicting an algorithm's performance, t(n) derived by inspecting lines of code, may be complex.</b><br>
+<b>But some parts of any such formula will be much more significant than others.</b><br>
+<b>1. As the amount of data (n) increases, usually a single term of any prospective equation for t(n) becomes the dominant factor.</b><br>
+<b>2. Big O retains this dominant characteristic and disregards the rest of any potential terms in the t(n) formula from further consideration.</b><br>
+<b>We call this dominant factor the Order of the algorithm.</b><br>
+<b>Denote the order by using the big O notation e.g. O(1) constant time, O(n) linear time, O(n<sup>2</sup>) quadratic time.</b><br>
+
+<h3 id="section4.7">Iteration & Algorithmic efficiency</h3>
+<b>Given N items of data to process, e.g. myProcess(N), what would be the order of the following alternative code fragments?
+<pre><code class="language-java">int z=0;
+...
+public void myProcess(int N) {
+	for (i=1; i <= 1000000; i++){
+		... z = z + 1;
+	} // end for i
+}
+public void myProcess(int N) {
+	for (i=1; i <= N; i++){
+		... z = z + 1;
+	} // end for i
+}
+public void myProcess(int N) {
+	for (i=1; i <= N; i++){
+		for (j=1; j <= N; j++){
+			... z = z + 1;
+		} //end for j
+	} // end for i
+}
+</code></pre>
+<br>
+<b>Instead of finding max/min values, searching for a target value in a set of data etc.</b><br>
+<b>Bubble sort is just about the simplest algorithm that will take an array of unsorted data and can be used to sort that data into order …</b><br>
+
+<h3 id="section4.8">Bubble sort</h3>
+<b>The structure of the code to carry out a Bubble Sort:</b><br>
+<pre><code class="language-java">for (int top=lastItem; top > 0; top--) {
+	for (int i=0; i < top; i++) {
+		if ( data[i] > data[i+1] ) {
+			int temp = data[i];
+			data[i] = data[i+1];
+			data[i+1] = temp;
+		} // end if
+	} // end for i
+} // end for top
+</code></pre>
+<br>
+<b>Note that the Bubble sort algorithm is quite an inefficient sorting technique, requiring several passes through the data being sorted (due to the nested "for" loops in the Java code above).</b><br>
+<br>
+<b>Bubble sort is an O(n<sup>2</sup>) algorithm.</b><br>
+<b>This means it is OK for small amounts of data but becomes very slow with large amounts of data.</b><br>
+<b>Many algorithms, not just sorting algorithms, could behave in this way, hence Big O analysis is important!</b><br>
+<b>All algorithms can be subjected to a Big O classification.</b><br>
+<b>Big O notation can be used to discuss different aspects of efficiency.</b><br>
+<b>1. Performance (execution time).</b><br>
+<b>2. Memory usage.</b><br>
+<b>3. Etc.</b><br>
+
+<h3 id="section4.9">Linear data structures</h3>
+<b>The data structures we have seen so far have been based on one of two organising principles:</b><br>
+<b>1. Some variant of the time of arrival as is usually the case with arrays, lists and queues.</b><br>
+<b>2. Array-based data sequenced upon some intrinsic property of the data e.g. priority queues.</b><br>
+<b>Note that priority queues can be constructed using "optimised" linked lists: if the list is a doubly linked list with both a head and a tail pointer and if every linked-list-item has a prevItem pointer.</b><br>
+<br>
+<b>Priority queues can be constructed easily using a modified linked-list variant: if the list is a doubly linked list i.e. with both a head and a tail pointer; and if every linked-list-item has a prevItem pointer as well as a nextItem pointer.</b><br>
+
+<h3 id="section4.10">Non-linear data structures</h3>
+<b>For many real-world applications these linear organisational schemes don't work.</b><br>
+<br>
+<b>Consider a manufacturing process that describes how elementary components should be put together to form larger assemblies.</b><br>
+<b>How many levels of sub-assemblies should gather together to ultimately synthesise a final product?</b><br>
+<b>How about the File Manager’s directory (or folder) structure in your PC: The organisation of folders, sub-folders, files etc.</b><br>
+<b>For these kinds problem domains we require data structures that are not linear.</b><br>
+<b>Where there is an implicit hierarchical organisation scheme we use branching Tree Data Structures.</b><br>
+<b>A tree exhibits a one-to-many relationship among its elements.</b><br>
+<b>Trees are the most important non-linear data structure that we use in computing.</b><br>
+
+<h3 id="section4.11">Tree Definitions</h3>
+<b>Nodes are the elements of the tree. A node will contain a key which uniquely identifies that node.</b><br>
+<b>Edges link nodes together. Their orientation reflects the hierarchy between the nodes.</b><br>
+<b>The root node is unique. It has no predecessors and may have many successors.</b><br>
+<b>Leaf nodes are nodes at the end of a branch, and always have a predecessor but no successors.</b><br>
+<b>A path is a distinct sequence of nodes connected by edges.</b><br>
+<b>The path length between any two nodes is the count of the nodes in the path, including end nodes.</b><br>
+<br>
+<b>Trees are usually described using genealogical terms:</b><br>
+<b>1. Parent is the unique predecessor of every node (except for the root node of course).</b><br>
+<b>2. Child is a successor node.</b><br>
+<b>3. Siblings are nodes that have a common parent.</b><br>
+<b>4. The level of a node is the number of nodes passed through on the path from the root to that node.</b><br>
+<br>
+<b>Trees are Recursive Structures</b><br>
+<b>When expressed in a binary tree form, it is easier to see that trees are inherently recursive data structures.</b><br>
+<b>Each node can be defined using three qualities:</b><br>
+<b>1. The data pertaining to the node itself.</b><br>
+<b>2. A reference (possibly null) to the left-child node.</b><br>
+<b>3. A reference (possibly null) to the right-child node.</b><br>
+<b>They are particularly well suited to manipulation by recursive code.</b><br>
+
+
+<h3 id="section4.12">Sub-trees</h3>
+<b>Sub-trees are an important concept. A sub-tree is formed by any node, together with all of its descendants, and with that node acting as the root node of the sub-tree.</b><br>
+<b>In the example, the green nodes form a sub-tree which has ‘B’ as its root node.</b><br>
+
+<h3 id="section4.13">Binary Tree</h3>
+<b>Trees can take many forms but one that is of pivotal importance to computing is the Binary Tree.</b><br>
+<b>This is because any kind of tree structure can be transformed into an equivalent binary tree.</b><br>
+<b>This is an important fact in principle but in practice many applications also require the use of trees that are not binary.</b><br>
+<b>Binary trees form an important sub-class of trees in terms of their use and implementation.</b><br>
+<b>Two significant forms are:</b><br>
+<b>1. A Knuth Binary Tree (KBT) is defined as one where:</b><br>
+<b>1.1 - Each node may have 0, 1 or 2 sub-trees.</b><br>
+<b>1.2 - Each sub-tree is defined as being either the left subtree or the right sub-tree.</b><br>
+<b>2. A Strictly Binary Tree is one in which each node has exactly 0 or 2 sub-trees.</b><br>
+
+
+</div>
+
+<br><hr><br>
+
+<div class="notes">
+<h2 class="Heading4535" id="section5">Binary Search & Linked List concepts</h2>
+
+<h3 id="section5.1">Binary Search</h3>
+<b>For large datasets that are already sorted and stored in an array this can be very effective.</b><br>	
+<b>The basic concept is quite simple.</b><br>
+<b>1. Divide the data list into two equal portions.</b><br>
+<b>2. Determine which half might contain the key (this action is termed a probe ): if the target key-item is not found at the mid-point of course.</b><br>
+<b>3. Repeat the process on the appropriate half of the list. This should be easy to determine since data is already sorted !</b><br>
+
+<h3 id="section5.2">Binary Search – iterative form</h3>
+<b>Code example:</b><br>
+<pre><code class="language-java">public int binarySearch1(int target, int[] buffer){
+	int top = buffer.length-1, bottom = 0, middle;
+	while ( top > bottom ) {
+		middle = (top + bottom)/2;
+		if ( buffer[middle] < target ) {
+			bottom = middle + 1;
+		}
+		else {
+			top = middle;
+		}
+	} // end while
+	if ( top == -1 ) // loop was never executed
+	return -2; // so indicate list is empty
+	if ( buffer[top] == target ) {
+		return top; // key successfully found
+	}
+	else {
+		return -1; // indicate key not found
+	}
+} // end binarySearch1
+</code></pre>
+<br>
+<b>Binary search is efficient for searching large lists. (The algorithm given above can be made even more efficient - for the best case scenario.)</b><br>
+<b>When it is used with smaller lists, the overheads involved may actually mean that sequential search is faster.</b><br>
+<b>The form of the algorithm lends itself to a recursive implementation.</b><br>
+<b>Recursive implementation can be expressed more simply than the iterative form.</b><br>
+
+<h3 id="section5.3">Arrays and Computer Memory</h3>
+<b>When an array is declared, Java creates a reference to the array for example:</b><br>
+<pre><code class="language-java">int[] myArray;</code></pre>
+<b>The elements of the array are created by the new operator and then we are able to load data into the array:</b><br>
+<pre><code class="language-java">myArray = new int[10];
+myArray[0] = 5;
+...
+</code></pre>
+<br>
+
+<h3 id="section5.4">Assigning Java references</h3>
+<b>As Java programmers we know that the new operator can be used to return a reference to the area of computer memory that has been allocated to an array, or object instance of a Java Class etc.</b><br>
+<b>Once created these references can be assigned and reassigned at will for example:</b><br>
+<pre><code class="language-java">int[] array1;
+int[] array2;
+...
+array1 = new int[10];
+array1[0] = 5;
+...
+array2 = array1;
+...
+array1 = null;
+</code></pre>
+<br>
+
+<h3 id="section5.5">Costly Operations on Arrays: Creation</h3>
+<b>Regardless of whether all 10 elements of the array are needed to hold any meaningful data, 10 elements-worth of computer memory are allocated for array1 (in the previous example).</b><br>
+<b>This is no problem if only 10 elements are allocated, but what about if 1,000,000 elements were allocated when the array was created and for most of the program we only use a small amount (say 10-20) of those elements?</b><br>
+
+<h3 id="section5.6">Linked Lists & Dynamic Data Structures</h3>
+<b>The recurring problem with the simple Array data structure in the above examples is that it is not dynamic enough.</b><br>
+<b>An alternative, the Linked List data structure, provides just the sort of dynamism that is lacking in a simple Array.</b><br>
+<b>Minimal linked list usually consists of an (optional) counter, maybe a maxSize, always has a special reference variable called head.</b><br>
+<b>A linked list is then constructed from a more fundamental building block called the linked list item.</b><br>
+<b>Every linked list item is a structured item which is self-referential.</b><br>
+<b>The smallest linked list is the empty list which actually consists of no linked list items at all i.e. counter=0 and head=null.</b><br>
+<b>The next smallest list consists of just a single list-item and so on.</b><br>
+<b>There is no absolute maximum size for a linked list - as new list items are added we simply ask the operating system to allocate more memory to accommodate the new linked list item.</b><br>
+
+<h3 id="section5.7">Java’s Garbage Collection</h3>
+<b>Whenever a Java object is left in a state where there are no valid reference variables pointing to it, the memory occupied by that item of data is released.</b><br>
+<b>The Java Virtual Machine, will then make the freed-up space available for any other programs to use.</b><br>
+<b>This process of identifying un-referenced data items and releasing the memory they once used is called Garbage Collection.</b><br>
+<b>In Java, Garbage Collection is an automatic process!!!</b><br>
+
+</div>
+
+<br><hr><br>
+
+<div class="notes">
+<h2 class="Heading4535" id="section6">Linked lists, Interfaces, ADTs & Array-based Queues</h2>
+
+<h3 id="section6.1">Linked Lists & Dynamic Data Structures</h3>
+<b>Linked Lists do not have a maximum length associated with them: the only unavoidable limitation is the size of the executing machine's memory.</b><br>
+<b>We could still choose to associate an arbitrary maximum number of elements to a given Linked List, if we wish.</b><br>
+<b>Consider the Algorithmic Complexity of common operations (add item, delete item, insert item etc).</b><br>
+<b>For example increasing the length of a Linked List, by adding a new data item to the front only involves allocating memory for the new data item, and then a simple update: to make sure that the List head correctly points to it.</b><br>
+<br>
+
+<h3 id="section6.2">Abstract Data Types (ADT’s)</h3>
+<b>Abstract Data Type (ADT): A specification of the fundamental operations that characterise a data type without supplying an implementation.</b><br>
+<b>The key issue here is that we do not need to know exactly how a type is implemented.</b><br>
+<b>We only require the implementation to adhere to the definition of the type.</b><br>
+<b>Information Hiding is a complementary concept to that of abstraction.</b><br>
+<b>We conceal details of implementation and focus on making only the key properties visible.</b><br>
+<b>This will be an important characteristic of ADTs.</b><br>
+<br>
+
+<h3 id="section6.3">ADTs in Java</h3>
+<b>In Java, abstractions can be effectively realised using the Class mechanism. We can then:</b><br>
+<b>1. Create new instances using constructor methods.</b><br>
+<b>2. Modify values (or states) by providing arguments to public methods.</b><br>
+<b>3. Inspect values (or states) by providing public methods.</b><br>
+<b>4. Hide implementation using private.</b><br>
+<b>For example for BankAccount we have:</b><br>
+<b>1. Constructors (BankAccount).</b><br>
+<b>2. Modification operations (deposit, withdraw,...).</b><br>
+<b>3. Inspection operations (getBalance).</b><br>
+<b>4. An ADT's set of permitted values is likely to be controlled by these methods, rather than by explicit literal values.</b><br>
+<br>
+
+<h3 id="section6.4">Java interface</h3>
+<b>We have already been naively using Java interfaces when we were building listener classes for event-handling in our drawing application.</b><br>
+<b>Importantly, the listener interfaces themselves did not implement any functionality.</b><br>
+<b>We had to do the implementation of each interface by coding our implementing listener classes.</b><br>
+<b>Interfaces are similar in some ways to abstract classes.</b><br>
+<b>In an interface though we can only specify public and abstract methods - no implementing functionality is allowed!</b><br>
+<b>In a Java interface, if we don’t explicitly declare a method as public and abstract then this will be assumed for us by the compiler.</b><br>
+<br>
+
+<h3 id="section6.5">The Queue data structure</h3>
+<b>A Queue is an example of an ordered list, where the ordering criterion for the contents of the queue (its elements) may be:</b><br>
+<b>1. Time of Arrival normally termed FIFO (First In - First Out) e.g. bus/bank/shop queues.</b><br>
+<b>2. Priority of the associated event or data value e.g. hospital casualty debts, disk access in an OS.</b><br>
+<b>For a FIFO queue the items of interest are:</b><br>
+<b>1. The first item (next to be used) also called the head or the front.</b><br>
+<b>2. The last item (where we append additions to the queue) also called the tail or the back.</b><br>
+<br>
+
+<h3 id="section6.6">A Queue ADT, using a Java Interface</h3>
+<b>In order to ensure consistency of access, regardless of the form of implementation, we often make use of an Interface specification for a queue.</b><br>
+<pre><code class="language-java">public interface IntQueue {
+	public boolean isFull();
+	public boolean isEmpty();
+	public void enQueue(int element);
+	public int Serve();
+	public int getHead();
+	public int queueLength();
+} // end interface class
+</code></pre>
+<br>
+
+<h3 id="section6.7">Queue ADT Operations</h3>
+<b>The operations for a queue include:
+<b>1. Create generates a new queue object.</b><br>
+<b>2. Delete removes an existing queue object.</b><br>
+<b>3. enQueue adds an element to the queue.</b><br>
+<b>4. Serve returns the ‘first’ item from the queue and removes it from the queue.</b><br>
+<b>5. getHead returns the first element, leaving the queue unchanged.</b><br>
+<b>6. isFull - returns true if the queue buffer is full.</b><br>
+<b>7. isEmpty - returns true if there are no elements in the queue.</b><br>
+<br>
+
+<h3 id="section6.8">Interface Pre- and Post-Conditions</h3>
+<b>In specifying the operations for an ADT, we often employ pre-conditions and post-conditions. These are often placed in a comment block.</b><br>
+<b>Pre-condition defines the state that the ADT has to already be in, in order for the operation to succeed.</b><br>
+<b>Post-condition defines the state that it will have after the operation has completed successfully.</b><br>
+<b>It is the responsibility of the program using the ADT to ensure that the pre-conditions are met.</b><br>
+<b>Code Example:</b><br>
+<pre><code class="language-java">public void enqueue(int newData);
+/* pre: the size of the queue has not reached an upper bound
+post: the queue includes the new element as its most
+recently arrived element (ie at the back) */
+</code></pre>
+<br>
+
+<h3 id="section6.9">Queue Boundary Exceptions</h3>
+<b>We do this by creating a new sub-class of RuntimeException.</b><br>
+<b>We can then catch these exceptions in any application/program encounters them when using the queue.</b><br>
+<b>Code Example:</b><br>
+<pre><code class="language-java">import java.lang.RuntimeException;
+...
+class QueueBoundaryException extends RuntimeException {
+	QueueBoundaryException(String message){
+		super(message);
+	} // end constructor
+} // end class
+</code></pre>
+<br>
+
+<h3 id="section6.10">Implementation with Cyclic buffering</h3>
+<b>Another way of organising a queue of elements in an array is to use cyclic buffering.</b><br>
+<b>This is a form of organisation by which we manage the front and back indices so that they are more independent of the physical bounds of the array:</b><br>
+<b>the queue data is still ordered from the first item to the last item.</b><br>
+<b>By using this form we avoid the need to copy data along elements of the array each time an item is removed.</b><br>
+<b>but this time at the cost of doing some extra work each time the contents of the queue are modified.</b><br>
+<b>the extra work involves slightly more complex control of the front and the back indices.</b><br>
+<br>
+
+<h3 id="section6.11">Cyclic Buffering by masking</h3>
+<b>One simple solution is to use the remainder operator, % , (also called the modulus) to always give a reliable cyclic index value for the head and tail values:</b><br>
+<b>we just start initially with head and tail values set as 0 and -1 respectively, even if the array length is, say, 4 (index values 0..3).</b><br>
+<b>then always pre-increment the tail index variable before each insertion, providing queue is not full.</b><br>
+<b>and always post-increment the head index variable after each removal, providing queue is not empty.</b><br>
+<b>we can tell if the queue is empty whenever tail &lt; head.</b><br>
+<b>queue's current size is always tail - head + 1.</b><br>
+<b>queue is full if queueLength()== buffer.length.</b><br>
+<br>
+
+<h3 id="section6.12">Array-based implementation for a Queue</h3>
+<pre><code class="language-java">public class ArrayQueue implements IntQueue {
+	int buffer[];
+	int head, tail, count;
+	// constructor
+	public ArrayQueue(int maxqueuesize){
+		buffer = new int[maxqueuesize];
+		head = 0;
+		tail = -1;
+		count = 0;
+	} // end constructor
+}
+</code></pre>
+<br>
+
+</div>
+
+<br><hr><br>
+
+<div class="notes">
+<h2 class="Heading4535" id="section7">Recursion in program control & data structures</h2>
+
+<h3 id="section7.1">Linked List</h3>
+<b>Simple size() method:</b><br>
+<pre><code class="language-java">public int size() {
+	int count = 0;
+	LLItem currItem = head;
+	while(currItem != null) {
+		count++;
+		currItem = currItem.getNextItem();
+	}
+	return count;
+}
+</code></pre>
+<br>
+
+<b>Linked Lists & Recursion:</b><br>
+<pre><code class="language-java">public int rSize() {
+	return ( recursiveSize(head) );
+} // end rSize
+	public int recursiveSize(LLItem ci) {
+		if (ci == null) return 0;
+		else return ( 1 + recursiveSize(ci.getNextItem()) );
+	} // end recursiveSize
+</code></pre>
+<br>
+
+<h3 id="section7.2">Self Reference: Recursion</h3>
+<b>A recursive program/method is one which calls itself.</b><br>
+<b>This simply means that somewhere inside the body of the method there is an invocation of the method we are currently in.</b><br>
+<b>This seems to make little sense at first.</b><br>
+<b>Until we realise that each invocation uses slightly different values for the actual arguments.</b><br>
+<b>Not all programming languages allow for this kind of self referential flow of control, but Java is one of the languages that does so.</b><br>
+<b>Recursion can lead to some powerful solutions to various problems.</b><br>
+<br>
+
+<h3 id="section7.3">How recursion works</h3>
+<b>A recursive method has a least two parts:</b><br>
+<b>1. One or more statement(s) which represent a Base Case.</b><br>
+<b>2. One or more statement(s) which represent a Recursive Case.</b><br>
+<br>
+<b>Code Example:</b><br>
+<pre><code class="language-java">public void printAnswer(int n) {
+	System.out.println("The value of " + n +
+	" factorial is = " + calcFactorial(n) );
+} // end printAnswer
+	public int calcFactorial(int n) {
+	if ( n == 0 ) return 1; // tests for Base Case
+	int factorial = n * calcFactorial(n-1); // recursive call ...
+	return factorial;
+} // end calcFactorial
+</code></pre>
+<br>
+
+<h3 id="section7.4">Recursion as divide and conquer</h3>
+<b>Recursive processing can be very important when we write algorithms that process large data structures that have a very regular structure.</b><br>
+<b>Each recursive invocation must use actual arguments which makes the problem at hand smaller/easier.</b><br>
+<b>The base case must detect a trivial condition/solution, so that:</b><br>
+<b>1. An answer can be readily stated.</b><br>
+<b>2. The processing which follows a return arrives at the final answer.</b><br>
+<br>
+
+<h3 id="section7.5">Recursive example with Strings</h3>
+<pre><code class="language-java">public boolean isPalindrome( String s ){
+	if ( s.length() <= 1) return true;
+	else {
+		if ( s.charAt(0) == s.charAt( s.length()-1 ) )
+		return isPalindrome( s.substring( 1, s.length()-1 ) );
+	}
+	else {
+		return false;
+	} // end else
+} // end isPalindrome
+</code></pre>
+<br>
+
+<h3 id="section7.6">How can a data structure be recursive?</h3>
+<b>Essentially by defining the data structure in terms of.</b><br>
+<b>1. A base case structure.</b><br>
+<b>2. A self-referential case.</b><br>
+<b>We could then define, linked list, as follows:</b><br>
+<b>1. Either an empty list.</b><br>
+<b>2. A list consisting of at least one item and the rest of the list.</b><br>
+<b>The list can grow by adding a new item to the front of the list: i.e. the item that was at the front is now the start of the rest of the list.</b><br>
+<b>A data structure defined in this way is not declaring that the data starts and ends at a particular location/element - as is the case for an array.</b><br>
+<br>
+
+<h3 id="section7.7">Part of a Linked List class</h3>
+<pre><code class="language-java">public class LinkedList {
+	// instance variable for the list
+	private LinkedListItem head;
+	// constructor
+	public LinkedList(){
+		head = null;
+	} // end constructor
+	public int size() {
+		int count = 0;
+		LinkedListItem currItem = head;
+		while (currItem != null) {
+			count++;
+			currItem = currItem.getNext();
+		} // end while
+		return count;
+	} // end size
+	some more methods ...
+} // end class LinkedList
+</code></pre>
+<br>
+
+<h3 id="section7.8">A Linked List class with recursion</h3>
+<pre><code class="language-java">public class LinkedList {
+	// instance variable for the list
+	private LinkedListItem head;
+	// constructor
+	public LinkedList(){
+		head = null;
+	} // end constructor
+	public int size() {
+		return recursiveSize(head);
+	} // end size
+	public int recursiveSize(LinkedListItem ci) {
+		if (ci == null) return 0;
+		else return ( 1 + recursiveSize(ci.getNext()) );
+	} // end recursiveSize
+	... some more list-processing methods ...
+} // end class LinkedList
+</code></pre>
+<br>
+
+<h3 id="section7.9">Binary Search</h3>
+<b>Binary search is efficient for searching large lists.</b><br>
+<b>When it is used with smaller lists, the overheads involved may actually mean that sequential search is faster.</b><br>
+<b>The form of the algorithm lends itself to a recursive implementation</b><br>
+<b>Recursive implementation can be expressed more simply than the iterative form.</b><br>
+<br>
+<b>Iterative code example:</b><br>
+<pre><code class="language-java">public int binarySearch1(int target, int[] buffer){
+	int top = buffer.length-1, bottom = 0, middle;
+	while ( top > bottom ) {
+		middle = (top + bottom)/2;
+		if ( buffer[middle] < target ) {
+			bottom = middle + 1;
+		}
+		else {
+			top = middle;
+		}
+	} // end while
+	if ( top == -1 ) { // loop was never executed
+		return -2; // so indicate list is empty
+	}
+	if ( buffer[top] == target ) {
+		return top; // key successfully found
+	}
+	else {
+		return -1; // indicate key not found
+	}
+} // end binarySearch1
+</code></pre>
+<br><br>
+<b>Recursive code example:</b><br>
+<pre><code class="language-java">public static int binarySearch2(int tKey, int[]buffer, int bottom, int top) {
+	int middle;
+	middle = ( bottom + top )/2;
+	if ( bottom > top ) return -1; // key was not found
+	else if ( tKey == buffer[middle] ) return middle; // found it
+	else if ( tKey > buffer[middle] ) { // recursive search goes on ...
+		// look to right of middle
+		return binarySearch2(tKey, buffer, middle+1, top);
+	}
+	else {
+		// look to left of middle
+		return binarySearch2(tKey, buffer, bottom, middle-1);
+	}
+} // end binarySearch2
+</code></pre>
+<br><br>
+
+
+</div>
+
+<br><hr><br>
+
+<div class="notes">
+<h2 class="Heading4535" id="section8">Stack ADT</h2>
+
+<h3 id="section8.1">Stack ADT</h3>
+<b>We can build more complex abstract data types by using the elementary Java features i.e.</b><br>
+<b>Primitive types: characters, integers, floats, booleans etc.</b><br>
+<b>Elementary data structures: strings, lists and arrays (of whichever type).</b><br>
+<b>In each of the above cases there is a very simple set of operations defined for data type.</b><br>
+<b>But with the ability to create abstract data types we can specify more complex data structures for which:</b><br>
+<b>It is the set of valid operations defined for an ADT that is its most distinctive feature not whether a concrete implementation of the ADT consists of character, integer, float ... data items etc.</b><br>
+
+<h3 id="section8.2">Using a Stack</h3>
+<b>A Stack is a form of Abstract Data Type (ADT) that exhibits a LIFO (Last In - First Out) kind of behaviour.</b><br>
+<b>Stacks are often employed in computer software such as operating systems and compilers. Two examples are:</b><br>
+<b>1. Nesting of method (sub-program) calls (a stack is normally used to store 'return' addresses - vital for recursion etc).</b><br>
+<b>2. Intermediate storage of 'results' (e.g. for computation during the evaluation of arithmetic formulae).</b><br>
+<b>Human-centred activities provide a few analogies with stacks:</b><br>
+<b>We often 'stack' items when disassembling equipment for repair, to ensure that we reassemble them in the right order.</b><br>
+
+<h3 id="section8.3">Stack ADT operations</h3>
+<b>The public operations provided by a Stack ADT would usually include:</b><br>
+<b>Create a new stack object.</b><br>
+<b>Delete a stack object.</b><br>
+<b>Push an element on to a stack.</b><br>
+<b>Pop an element from a stack.</b><br>
+<b>Peek the value of the top element, leaving the stack unchanged.</b><br>
+<b>isEmpty to check if the stack is currently empty.</b><br>
+<b>isFull to check if the stack is currently full.</b><br>
+<b>currentSize a useful operation to report how many items present.</b><br>
+<b>If implementing a Stack ADT as a Java class, each of these operations could be realised as a separate public method defined in a Stack interface.</b><br>
+<br>
+<b>Code example:</b><br>
+<pre><code class="language-java">public interface Stack {
+	public boolean isFull();
+	public boolean isEmpty();
+	public int currentSize();
+	public void push(int newData);
+	public int pop();
+	public int peek();
+} // end Stack interface
+
+
+
+private int [] stackArray;
+private int top;
+public ArrayStack(int arraySize) {
+	stackArray = new int[arraySize];
+	top = -1;
+} // end constructor
+public boolean isEmpty() {
+	if ( top <= -1 ) return true;
+	else return false;
+} // end isEmpty
+public boolean isFull() {
+	if ( top >= arrayStack.length ) return true;
+	else return false;
+} // end isFull
+public int peek() {
+	if ( isEmpty() )
+	throw new StackBoundaryException(”Stack underflow");
+	else return stackArray[top];
+} // end peek
+</code></pre>
+<br><br>
+
+<h3 id="section8.4">ADT specific exceptions</h3>
+<b>For most ADTs there are two typical exceptional scenarios that frequently recur:</b><br>
+<b>1. Notice that trying to Pop from an empty stack is an erroneous thing to do – there is no Object to be returned. To do so should result in underflow.</b><br>
+<b>2. Also, trying to Push data onto a stack that happens to be full is also an erroneous thing to do – there is no room for the Object to be properly stored by the stack. To do so should result in overflow.</b><br>
+
+<h3 id="section8.5">Stack ADT - list-based</h3>
+<b>Of course there are further alternative ways in which a Stack could implemented.</b><br>
+<b>One of the alternatives is an implementation that uses linked-lists rather than arrays.</b><br>
+<b>In this case:</b><br>
+<b>1. Push requests could be realised using an addToHead(…)list based operation.</b><br>
+<b>Pop requests could be realised using a removeFromToHead(…)list based operation.</b><br>
+<b>The algorithmic complexity in each case is O(1) as the list-based Push and Pop would only ever need to interact with the head element of the list.</b><br>
+
+<h3 id="section8.6">Stack data structures</h3>
+<b>Along with Arrays, Linked Lists, Queues and Trees the Stack is one of the most important and fundamental data structures in Computer Science.</b><br>
+<b>We have already mentioned how the LIFO mode of operation of a Stack is a fundamental component of many computational processes e.g.</b><br>
+<b>When the operating system to correctly and precisely control blocks memory during recursive processing.</b><br>
+<b>The recursive traversal of data structures like Linked Lists and Trees.</b><br>
+
+
+</div>
+
+<br><hr><br>
+
+<div class="notes">
+<h2 class="Heading4535" id="section9">Hash Files, Hash Tables & Intro to MVC Design Patterns</h2>
+
+<h3 id="section9.1">Hash Files</h3>
+<b>Hash files are intended to allow fast random access to logical records without the indexing overheads.</b><br>
+<b>Each record must have a key field.</b><br>
+<b>The file’s physical storage space is divided into regions called buckets.</b><br>
+<b>Each bucket can store more than one logical record.</b><br>
+<b>A logical record is stored in a particular target bucket – determined from its key field value by means of a special hashing function.</b><br>
+<br>
+<b>A hash function computes a bucket number for each key value stored in the file.</b><br>
+<b>Each record gets stored in the target bucket corresponding to the hash of its key.</b><br>
+<b>The number of buckets available in a hash file plays an important role in its effectiveness.</b><br>
+<b>The total number of buckets in a file is usually specified as a large prime number.</b><br>
+
+<h3 id="section9.2">Collisions</h3>
+<b>Collision: The case of two keys hashing to the same bucket.</b><br>
+<b>This can be tolerated while there is enough room for logical records in the target bucket but causes within-bucket sequential search problems also arise when a bucket becomes full.</b><br>
+<b>Future colliding records may have to be stored in a separate overflow area requiring pointer-following and more search time.</b><br>
+<br>
+<b>Solutions:</b><br>
+<b>Increase number of buckets and then rehash all data.</b><br>
+<b>Have expandable variable size buckets – still requires within-bucket sequential search.</b><br>
+<b>Use overflow buckets for full target buckets to point to.</b><br>
+<b>Collisions not usually a major problem while typical hash files are less than 75% full.</b><br>
+<b>Hash files therefore often need to waste some space in a trade-off for speed of access!</b><br>
+<br>
+<b>Collisions inevitably start to occur as more data gets added to the hash-file.</b><br>
+<b>For example, starting with an empty hash-file of 41 buckets inserting records one at a time:</b><br>
+<br>
+<b>First record hashes to an empty bucket with probability 41/41 = 1</b><br>
+<b>Second record hashes to an empty bucket with probability 40/41</b><br>
+<b>Third record hashes to an empty bucket with probability 39/41</b><br>
+<b>Fourth record hashes to an empty bucket with probability 38/41</b><br>
+<b>Fifth record hashes to an empty bucket with probability 37/41</b><br>
+<b>Sixth record hashes to an empty bucket with probability 36/41</b><br>
+<b>Seventh record hashes to an empty bucket with probability 35/41</b><br>
+<b>BUT eighth record hashes to an empty bucket with probability 34/41</b><br>
+<b>Overall probability of avoiding collisions after just 8 records added:</b><br>
+<b>(41/41).(40/41).(39/41).(38/41).(37/41).(36/41).(35/41).(34/41) = 0.482</b><br>
+<b>I.e. probability that a collision has occurred = 1 – 0.482 = 0.518</b><br>
+
+<h3 id="section9.3">Hash Tables</h3>
+<b>The Hashing technique described above can also be used to find elements in a data structure without having to perform any linear search (recall searching in lists).</b><br>
+<b>HashSets and HashMaps specifically utilise this technique.</b><br>
+<b>In both structures, elements are stored in a hash table.</b><br>
+<b>Think of a hash table as a kind of array and the hash code of an element as the index for the element in the array.</b><br>
+<b>The hash code of an object (an integer value) is produced by a hash function in such a way that different objects are likely to produce different hash codes.</b><br>
+<br>
+<b>In the simplest implementation the hash code can be used as the index to the hash table.</b><br>
+<b>However, this would require the creation of very large hash tables that (in some cases) would only be sparsely populated.</b><br>
+<b>Instead hash tables of smaller sizes (than the number of all possible hash codes) are created and hash codes can be reduced in order to fall within the hash table bounds.</b><br>
+
+<h3 id="section9.4">Searching a Hash Table</h3>
+<b>Algorithm for finding an object x in a hash table:</b><br>
+<b>Compute the hash code (using a hashCode() method) and reduce it modulo(%) the table size.</b><br>
+<b>all done in the search method of the data structure.</b><br>
+<b>this results in an index i into the hash table.</b><br>
+<b>Search through the elements of the bucket (perhaps a linked list) found at position i.</b><br>
+<b>If a match is found among the elements of the bucket then item x is in the data structure, otherwise it is not present.</b><br>
+
+<h3 id="section9.4">Hash Table Operations</h3>
+<b>The computational complexity of adding, finding and removing an element from a hash table depends on how it is populated.</b><br>
+<b>In the best case, all buckets will contain either 0 or 1 element(s). This is the case with no collisions and all three operations mentioned above will take O(1) time.</b><br>
+<b>In practice the number of buckets should be around 1.3x larger than the number of elements intended to be stored in the hash table.</b><br>
+<b>The competing concerns in making this choice are the number of collisions and the amount of allocated memory.</b><br>
+
+
+</div>
+
+<br><hr><br>
+
+<div class="notes">
+<h2 class="Heading4535" id="section10">Model-View-Controller (MVC) Design</h2>
+
+<h3 id="section10.1">MVC Design Pattern</h3>
+<b>Model:</b><br>
+<b>1. The data (i.e. system’s state).</b><br>
+<b>2. Methods for accessing and modifying state.</b><br>
+<b>View:</b><br>
+<b>1. Renders contents of model for user visualisation.</b><br>
+<b>2. When model changes - view may need to be updated.</b><br>
+<b>Controller:</b><br>
+<b>1. Translates user actions (i.e. interactions via the view) into operations on the model.</b><br>
+<b>2. Example user actions: button clicks, menu selections etc</b><br>
+
+<h3 id="section10.2">MVC with Java/Swing</h3>
+<b>View:</b><br>
+<b> - Would usually be realised using an over-arching JFrame and then all of the accompanying GUI components and their layouts (recall that for the DrawingApplication we tried to confine much of this to the application’s constructor method?).</b><br>
+<b>Controller(s):</b><br>
+<b> - Take the form of Java’s listener classes. Recall that we wrote many inner-class listeners and attached instances of them to individual GUI components.</b><br>
+<b>Model:</b><br>
+<b> - A separate Java class for data structures (maybe even a DB).</b><br>
+
+<h3 id="section10.3">MVC Problems</h3>
+<b>Controllers sometimes need to produce their own outputs and responses from the user.</b><br>
+<b>E.g. pop-up menus or Dialogue boxes.</b><br>
+<b>Some aspects of system state are shared between Controller and View – without being part of the Model.</b><br>
+<b>Some Java GUI components allow direct user control without Controller intervention.</b><br>
+<b>E.g. moving the slider on a JScrollbar.</b><br>
+<b>In each of the above cases the issue is the degree of overlap between the roles of the View and Controller software design concepts.</b><br>
+<b>So many Java MVC implementations relax the need for these two to be crisply separated.</b><br>
+
+<h3 id="section10.4">MVC Adherence</h3>
+<b>One good way to check if the Model is properly isolated from the View or View-Controller is to try it out with a completely different model of user interaction (UI).</b><br>
+<b>E.g. can it be operated by a program using console directed input/output?</b><br>
+<b>More complex/long-running Model processes may necessitate the need to develop a multi-threaded application to prevent GUI-locking?</b><br>
+<br>
+<br>
+
+
+</div>
+
+
+<!-- <b></b><br> -->
+<!-- <pre><code class="language-java">
+</code></pre> -->
+
+<script src="../js/prism.js"></script>
+</body>
+</html>
